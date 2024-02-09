@@ -1,0 +1,7 @@
+.pets_grid {
+    background-color: #4f00ff;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px; 
+}
