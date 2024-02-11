@@ -103,8 +103,23 @@ footer {
 
 /* Index Styling */
 
+.index_list {
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.index_list li {
+    border: 5px dashed #ffff00;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .index_footer {
-    margin: 90%;
+    margin: 78%;
 }
 
 /* Pets Styling */
