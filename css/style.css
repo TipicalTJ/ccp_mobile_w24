@@ -5,9 +5,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 html {
-    background-image: linear-gradient(#0000f4, #f40000);
+    background-image: linear-gradient(#0000f4, #cc0000);
     background-size: auto;
-    /* height: 200%; */
     overflow: scroll;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif
@@ -37,12 +36,12 @@ nav div, nav a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     align-content: space-evenly;
-    width: 100%;
+    max-width: 100%;
     height: 32px;
     color: #ffffff;
     background-color: #000000;
     font-size: 24px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .active {
@@ -54,7 +53,8 @@ nav div, nav a {
 h1 {
     font-size: 3em;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
+    padding-top: 20px;
     background-color: rgba(0, 200, 200, 80%);
     border-radius: 10px;
 }
@@ -62,30 +62,47 @@ h1 {
 h2 {
     font-size: 2em;
     text-align: center;
+    margin: 10px;
 }
 
 h3 {
     font-size: 1.5em;
     margin: 20px;
     text-align: center;
+    background-color: rgba(0, 200, 200, 80%);
+    border-radius: 10px;
 }
 
 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
 }
 
+h2 ~ img {
+    max-width: 95%;
+    border-radius: 20px;
+    border: 10px solid #000000;
+}
+
+a {
+    color: #ffffff;
+}
+
+p {
+    margin: 10px;
+    font-size: 1em;
+}
+
 /* Styling for particular pages */
+
+/* Pets Styling */
 
 .pets_grid {
     color: #ffffff;
     border: 10px solid #000;
     border-radius: 20px;
     margin: 10px;
-}
-
-h2 ~ img {
-    max-width: 80%;
-    border-radius: 20px;
 }
 
 .pets_img_grid {
@@ -105,4 +122,51 @@ h2 ~ img {
     border: 2px solid #000000;
     padding: 1fr;
     font-size: 1em;
+}
+
+/* Recipes Styling */
+
+.recipe_facts, .pet_likes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+.recipe_facts > li, .pet_likes > li {
+    border: 2px solid #000000;
+    padding: 10px;
+    background-color: #cccc00;
+    color: #000000;
+}
+
+.black {
+    color: #000000;
+}
+
+.recipe_ingred_items {
+    display: grid;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.recipe_ingred_items li{
+    border: 2px solid #000000;
+    background-color: #00aaaa;
+    text-align: center;
+    vertical-align: center;
+    padding: 3px;
+    min-height: 3em;
+}
+
+.recipe_steps {
+    border: 2px dashed #ffff00;
+    margin: 10px;
+    padding: 5px;
+    list-style: inside decimal;
+    border-radius: 12px;
+}
+
+.recipe_steps > li {
+    margin: 10px;
 }
