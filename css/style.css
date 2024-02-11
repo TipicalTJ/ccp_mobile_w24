@@ -164,6 +164,7 @@ footer {
 .recipe_ingred_items li{
     border: 2px solid #000000;
     background-color: #00aaaa;
+    color: #000000;
     text-align: center;
     vertical-align: center;
     padding: 3px;
